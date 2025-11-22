@@ -10,18 +10,38 @@ body {
 .main {
 
     width: 1024px;
-    min-height: 500px;
+    min-height: 1000px;
     margin: 0 auto;
     background: #FFF;
-    
+
+    border-left: 1px solid #353749;
+    border-right: 1px solid #353749;
+
+    -webkit-box-shadow: 0px 0px 8px 5px rgba(192, 201, 206, 0.6);
+    -moz-box-shadow: 0px 0px 8px 5px rgba(192, 201, 206, 0.6);
+    box-shadow: 0px 0px 8px 5px rgba(192, 201, 206, 0.6);
+
 }
 
 
 /* ---- HEADER ----*/
 
+header {
+    width: 1024px;
+    height: 580px;
+    background-image: url("../images/bg-footer-1024.jpg");
+    background-position: 0%;
+    background-repeat: no-repeat;
+}
 
-
-
+.header-top {
+    width: 1024px;
+    height: 60px;
+    background-color: rgba(43 45 66 / 90%);
+    /*background-color: #2B2D4200;*/
+    border-radius: 0px 0px 15px 15px;
+    
+}
 
 
 /* ---- FOOTER ----*/
