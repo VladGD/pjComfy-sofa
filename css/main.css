@@ -1,11 +1,21 @@
 
+/*  -- Bitter --  */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+/*  -- Source Serif 4 --  */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+
 
 body {
     background: #E3E3E3;
+    font-family: "Bitter", "Source Serif 4", "Cormorant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
-/* ---- MAIN ----*/
+/* ---- MAIN PAGE ----*/
 
 .main {
 
@@ -29,6 +39,7 @@ body {
 header {
     width: 1024px;
     height: 580px;
+    background: #AEB4B2;
     background-image: url("../images/bg-footer-1024.jpg");
     background-position: 0%;
     background-repeat: no-repeat;
@@ -37,15 +48,61 @@ header {
 .header-top {
     width: 1024px;
     height: 60px;
+    background-color: rgb(43 45 66);
     background-color: rgba(43 45 66 / 90%);
-    /*background-color: #2B2D4200;*/
     border-radius: 0px 0px 15px 15px;
+    color:#FFF;
+    font-size: 16px;
     
 }
 
+.logo {
+    float: left;
+    font-size: 26px;
+    font-weight: 700;
+    width: 250px;
+    height: 60px;
+}
+
+.nav {
+    float: left;
+    width: 550px;
+    height: 60px;
+
+}
+
+.telefon {
+    float: left;
+    width: 200px;
+    height: 60px;
+}
+
+.inspire {
+    width: 1024px;
+    height: 75px;
+    box-sizing: border-box;
+    margin-top: 410px;
+    padding-top: 11px;
+    background-color: #8C8EA9; 
+    background-color: rgba(140 142 169 / 80%);
+    clear: both;
+    color:#FFF;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/* ---- CONTENT ----*/
+.content {
+
+}
 
 /* ---- FOOTER ----*/
 
+footer {
+
+}
 
 
 
