@@ -14,7 +14,11 @@ body {
     font-style: normal;
 }
 
-
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #353749;
+}
 
 /* ---- MAIN PAGE ----*/
 
@@ -148,13 +152,121 @@ header {
 
 /* ---- CONTENT ----*/
 .content {
+    width: 1024px;
+}
+
+.achievements {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: 220px 220px 220px;
+    justify-content: center;
+    gap: 80px;
+    /* height: 325px; */
+}
+
+.achievements .column {
+    box-sizing: content-box;
+    padding: 75px 0;
+}
+
+
+.achievements .circle {
+    box-sizing: border-box;
+    width: 122px;
+    height: 122px;
+    background-color: #353749;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    padding: 11px 0 0 0;
+}
+
+.achievements .circle-nested {
+    width: 100px;
+    height: 100px;
+    background-color: #7D7E93;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 25px 0;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+.achievements .column p {
+    
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.achievements .column span {
+    font-weight: 700;
+    color: #F26419;
+}
+
+
+/* ---- ADVANTAGES ----*/
+.advantages {
+    display: grid;
+    grid-template-columns: 290px 290px 290px;
+    justify-content: center;
+    gap: 60px;
+    box-sizing: content-box;
+    background-color: #FAF7FF;
+    padding: 75px 0;
+}
+
+.advantages .adv-block {
+    text-align: center;
+}
+
+.advantages .adv-img {
+    border-radius: 79px 17px 128px 17px;
+    overflow: hidden;
+}
+
+.advantages .adv-img img {
+    width: 280px;
+}
+
+.advantages .adv-block h2 {
+    margin: 15px 0;
+}
+
+.advantages .adv-block p {
+    margin: 15px 0;
+    text-align: justify;
+    line-height: 24px;
+}
+
+
+/* ---- CATALOG ----*/
+.catalog {
+    box-sizing: content-box;
+    
+
+
+    height: 300px;/*   */
+}
+
+
+
+/* ---- ABOUT ----*/
+.about {
+    box-sizing: content-box;
+    background-color: #FAF7FF;
+
+
+
+    height: 300px;/*   */
 
 }
 
 /* ---- FOOTER ----*/
 
 footer {
-
+    height: 500px;
+    background-color: #2B2D42;
 }
 
 
