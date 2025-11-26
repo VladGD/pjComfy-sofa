@@ -297,8 +297,6 @@ header {
     width: 100%;
     margin: 5px;
     padding: 5px;
-    
-
 }
 
 .catalog-flex .cat-item {
@@ -373,18 +371,109 @@ header {
 }
 
 
+/* ---- BRANDS ----*/
 
-/* ---- ABOUT ----*/
-.about {
+.brands {
+    padding: 75px 10px;
+    background-color: #FAF7FF;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.brands h1 {
+    margin: 0 0 0 50px;
+}
+
+
+.brands-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+}
+
+.brands .brand-itm {
+    width: 220px;
+    height: 100px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #D9D9D9;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.brands .brand-itm a, .brands .brand-itm a:hover {
+    text-decoration: none;
+}
+
+.brands .brand-itm img {
+    width: 180px;
+    height: 80px;
+}
+
+
+/* ---- CONTACTS ----*/
+.contacts {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 75px 10px;
+}
+
+.contacts h1 {
+    margin: 0 0 0 50px;
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: auto 620px;
+    justify-content: stretch;
+    gap: 20px;
     box-sizing: content-box;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
-    padding: 75px 0;
+    margin: 25px 0;
+}
+
+.contacts-grid .column1 {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+.contacts-grid .column1 p {
+
+}
+
+.contacts-grid .column2 {
+    
+}
+
+.contacts-grid .column2 img {
+    
+}
+
+
+/* ---- ABOUT ----*/
+.about {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 75px 10px;
     background-color: #FAF7FF;
 
 
-
-    /*height: 300px;   */
+height: 300px;
+    /*   */
 
 }
 
@@ -395,7 +484,7 @@ header {
 /* ---- FOOTER ----*/
 
 footer {
-    height: 500px;
+    height: 200px;
     background-color: #2B2D42;
 }
 
