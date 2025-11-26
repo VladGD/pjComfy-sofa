@@ -275,18 +275,14 @@ header {
 
 /* ---- CATALOG ----*/
 .catalog {
-    box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    padding: 75px 0;
-    
-
-
-    /* height: 300px;  */
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 75px 10px;
 }
 
 .catalog h1 {
-    margin: 0 0 0 50px;
+    margin: 0 0 15px 50px;
 }
 
 .catalog .catalog-flex {
@@ -382,7 +378,7 @@ header {
 }
 
 .brands h1 {
-    margin: 0 0 0 50px;
+    margin: 0 0 15px 50px;
 }
 
 
@@ -429,7 +425,7 @@ header {
 }
 
 .contacts h1 {
-    margin: 0 0 0 50px;
+    margin: 0 0 15px 50px;
 }
 
 .contacts-grid {
@@ -470,15 +466,10 @@ header {
     -moz-box-sizing: border-box;
     padding: 75px 10px;
     background-color: #FAF7FF;
-
-
-height: 300px;
-    /*   */
-
 }
 
 .about h1 {
-    margin: 0 0 0 50px;
+    margin: 0 0 15px 50px;
 }
 
 /* ---- FOOTER ----*/
