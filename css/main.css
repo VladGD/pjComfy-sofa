@@ -238,35 +238,42 @@ header {
 
 /* ---- ADVANTAGES ----*/
 .advantages {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 50px 10px;
+    background-color: #FAF7FF;
+}
+
+.advantages h1 {
+    margin: 0 0 50px 50px;
+}
+
+.advantages .advantages-grid {
     display: grid;
     grid-template-columns: 290px 290px 290px;
     justify-content: center;
     gap: 50px;
-    box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    background-color: #FAF7FF;
-    padding: 75px 0;
 }
 
-.advantages .adv-block {
+.advantages-grid .adv-block {
     text-align: center;
 }
 
-.advantages .adv-img {
+.advantages-grid .adv-img {
     border-radius: 79px 17px 128px 17px;
     overflow: hidden;
 }
 
-.advantages .adv-img img {
+.advantages-grid .adv-img img {
     width: 280px;
 }
 
-.advantages .adv-block h2 {
+.advantages-grid .adv-block h2 {
     margin: 15px 0;
 }
 
-.advantages .adv-block p {
+.advantages-grid .adv-block p {
     margin: 15px 0;
     text-align: justify;
     line-height: 24px;
@@ -278,11 +285,11 @@ header {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    padding: 75px 10px;
+    padding: 50px 10px;
 }
 
 .catalog h1 {
-    margin: 0 0 30px 50px;
+    margin: 0 0 50px 50px;
 }
 
 .catalog .catalog-flex {
@@ -332,18 +339,6 @@ header {
 
 .cat-item .itm-more {
     text-align: center;
-
-    /*
-    width: 225px;
-    height: 28px;    
-    padding: 8px 0 0 0;
-    margin: 20px auto;    
-    border: 1px solid #C8C8C8;
-    border-radius: 8px;
-    background-color: #F2F1F3;
-    color: #434874;
-    font-size: 20px;
-    */
 }
 
 .cat-item .itm-more a.button {
@@ -387,15 +382,15 @@ header {
 /* ---- BRANDS ----*/
 
 .brands {
-    padding: 75px 10px;
-    background-color: #FAF7FF;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    background-color: #FAF7FF;
+    padding: 50px 10px;
 }
 
 .brands h1 {
-    margin: 0 0 30px 50px;
+    margin: 0 0 50px 50px;
 }
 
 
@@ -438,11 +433,11 @@ header {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    padding: 75px 10px;
+    padding: 50px 10px;
 }
 
 .contacts h1 {
-    margin: 0 0 30px 50px;
+    margin: 0 0 50px 50px;
 }
 
 .contacts-grid {
@@ -507,18 +502,88 @@ header {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    padding: 75px 10px;
     background-color: #FAF7FF;
+    padding: 50px 10px;
+    
+    min-height: 670px;
+    background-image: url("../images/bg-about-500.png");
+    background-position: 93% 100%;
+    background-repeat: no-repeat;
 }
 
 .about h1 {
-    margin: 0 0 30px 50px;
+    margin: 0 0 50px 50px;
 }
+
+.about .fragment1 {
+    width: 710px;
+    margin: 0 10px;  
+}
+
+.about .fragment1 p {
+    line-height: 24px;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+.abt-service-list {
+    width: 100%;
+    height: 570px;
+    position: relative;
+}
+
+
+.abt-service-list .srv-block {
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.abt-service-list .srv-block .img {
+    border-radius: 20%;
+    width: 180px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.abt-service-list .srv-block .text {
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    padding: 15px 5px;
+}
+
+
+
+.position1 {
+    top: -30px;
+    left: 260px;
+ }
+
+.position2 {
+    top: 95px;
+    left: 31px;
+    
+ }
+
+.position3 {
+    top: 23px;
+    left: 497px;
+    
+ }
+
+.position4 {
+    top: 278px;
+    left: 260px;
+ }
+
 
 /* ---- FOOTER ----*/
 
 footer {
-    height: 230px;
+    height: 240px;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -531,7 +596,7 @@ footer {
         "c1 c1 c1 c2 c2 c2 c3 c3 c3 c3 c3 c4"
         "c5 c5 c5 c5 c5 c5 c5 c5 c5 c5 c5 c5";
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 180px 50px;
+    grid-template-rows: 190px 50px;
     color: #FFF;
 }
 
@@ -542,17 +607,22 @@ footer {
 .ftr-company  p.name {
     font-size: 32px;
     font-weight: 700;
-    padding: 30px 0 15px 20px;
+    padding: 40px 0 15px 20px;
 }   
+
+.ftr-company  p.descr {
+    
+}  
 
 .ftr-company  p {
     padding: 0px 0 5px 20px;
+    font-size: 14px;
 } 
 
 
 .footer-grid .ftr-order-call {
     grid-area: c2;
-    padding: 30px 0 0;
+    padding: 40px 0 0;
 }
 
 .ftr-order-call .button-call {
@@ -573,7 +643,7 @@ footer {
     grid-area: c3;
     text-align: center;
     line-height: 25px;
-    padding: 30px 0 0;
+    padding: 40px 0 0;
 }
 
 .footer-grid .ftr-text p {
@@ -583,7 +653,7 @@ footer {
 
 .footer-grid .frt-social {
     grid-area: c4;
-    padding: 33px 25px 0;
+    padding: 43px 25px 0;
 }
 
 .footer-grid .frt-social p {
@@ -595,6 +665,7 @@ footer {
     text-align: center;
     padding: 0 0 20px 0;
 }
+
 
 
 
