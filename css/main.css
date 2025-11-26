@@ -282,7 +282,7 @@ header {
 }
 
 .catalog h1 {
-    margin: 0 0 15px 50px;
+    margin: 0 0 30px 50px;
 }
 
 .catalog .catalog-flex {
@@ -290,7 +290,6 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
     margin: 5px;
     padding: 5px;
 }
@@ -301,7 +300,7 @@ header {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    margin: 25px 20px;
+    margin: 15px 20px;
     box-shadow: 0px 0px 7px 1px rgba(192, 201, 206, 0.6);
     -webkit-box-shadow: 0px 0px 7px 1px rgba(192, 201, 206, 0.6);
     -moz-box-shadow: 0px 0px 7px 1px rgba(192, 201, 206, 0.6);
@@ -378,7 +377,7 @@ header {
 }
 
 .brands h1 {
-    margin: 0 0 15px 50px;
+    margin: 0 0 30px 50px;
 }
 
 
@@ -425,7 +424,7 @@ header {
 }
 
 .contacts h1 {
-    margin: 0 0 15px 50px;
+    margin: 0 0 30px 50px;
 }
 
 .contacts-grid {
@@ -469,7 +468,7 @@ header {
 }
 
 .about h1 {
-    margin: 0 0 15px 50px;
+    margin: 0 0 30px 50px;
 }
 
 /* ---- FOOTER ----*/
