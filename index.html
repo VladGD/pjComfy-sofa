@@ -10,18 +10,24 @@
 <div class="main">
     <header>
         <div class="header-top">
-            <div class="logo"><div class="img"><img src="images/logo.png" alt="LOGO" width="48" height="48"></div><div class="name">Comfy Sofa</div></div>
+            <div class="logo">
+                <div class="img">
+                    <img src="images/logo.png" alt="LOGO" width="48" height="48">
+                </div>
+                <div class="name">Comfy Sofa</div>
+                <a name="top"></a>
+            </div>
             <div class="navigation">
                 <nav>
                     <ul>
                         <li><a href="#" title="Главная">Главная</a></li>
-                        <li><a href="#" title="Каталог">Каталог</a></li>
-                        <li><a href="#" title="Контакты">Контакты</a></li>
-                        <li><a href="#" title="О нас">О нас</a></li>
+                        <li><a href="#section-catalog" title="Каталог">Каталог</a></li>
+                        <li><a href="#section-contacts" title="Контакты">Контакты</a></li>
+                        <li><a href="#section-about" title="О нас">О нас</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="telefon">тел. 8-901-894-56-00</div>
+            <div class="telefon"><a href="tel:+79018945600">+7 (901) 894-56-00</a> </div>
         </div>
         <div class="inspire">Идеальный диван ждет тебя</div>
     </header>
@@ -99,7 +105,7 @@
 
     <!-- CATALOG -->
     <div class="content catalog">
-        <h1>Каталог</h1>
+        <h1 id="section-catalog">Каталог</h1>
         <div class="catalog-flex">
 
             <div class="cat-item">
@@ -201,7 +207,7 @@
 
     <!-- CONTACTS -->
     <div class="content contacts">
-        <h1>Контакты</h1>
+        <h1 id="section-contacts">Контакты</h1>
 
         <div class="contacts-grid">
             <div class="column1">
@@ -209,7 +215,7 @@
                     <dt>Адрес:</dt>
                     <dd>Ивановская обл., г. Иваново, проспект Ленина д. 9, 3й этаж</dd>
                     <dt>Телефон:</dt>
-                    <dd>8-901-894-56-78</dd>
+                    <dd><a href="tel:+79018945600">+7 (901) 894-56-00</a></dd>
                     <dt>Эл.почта:</dt>
                     <dd><a href="mailto:comfy-sofa@mail.ru">comfy-sofa@mail.ru</a></dd>
                     <dt>График работы:</dt>
@@ -239,7 +245,7 @@
 
     <!-- ABOUT -->
     <div class="content about">
-        <h1>О нас</h1>    
+        <h1 id="section-about">О нас</h1>    
 
         <div class="abt-service-list">
            <div class="srv-block position1">
@@ -279,7 +285,7 @@
             </div>
             <div class="ftr-text">
                 По всем вопросам связанными  с расцветками, материалами обивки, способами оплаты, доставки,  просим обращаться по телефону.
-                <p>+7-901-894-56-78</p>
+                <p><a href="tel:+79018945600">+7 (901) 894-56-00</a></p>
             </div>
             <div class="frt-social">
                 <p><a href="#" title="Перейти в Телеграмм"><img src="images/icon-soc-telegram.png" alt="Telegram"></a></p>
@@ -293,6 +299,26 @@
     </footer>
 
 </div>
-
+<a href="#top" id="back-to-top" class="back-to-top" title="Back to top">▲</a>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const backToTop = document.getElementById("back-to-top");
+ 
+  // Показать/скрыть кнопку при прокрутке страницы
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 300) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  });
+ 
+  // Плавная прокрутка при клике на кнопку
+  backToTop.addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
+</script>
 </body>
 </html>
