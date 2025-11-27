@@ -253,6 +253,10 @@ header {
     -moz-box-sizing: border-box;
     padding: 50px 10px;
     background-color: #FAF7FF;
+
+    background-image: url("../images/bg-sofa-08.png");
+    background-position: 93% 100%;
+    background-repeat: no-repeat;
 }
 
 .advantages h1 {
@@ -296,6 +300,10 @@ header {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     padding: 50px 10px;
+
+    background-image: url("../images/bg-sofa-cat-02.png");
+    background-position: -159% 102%;
+    background-repeat: no-repeat;
 }
 
 .catalog h1 {
@@ -321,6 +329,7 @@ header {
     box-shadow: 0px 0px 7px 1px rgba(192, 201, 206, 0.6);
     -webkit-box-shadow: 0px 0px 7px 1px rgba(192, 201, 206, 0.6);
     -moz-box-shadow: 0px 0px 7px 1px rgba(192, 201, 206, 0.6);
+    background-color: white;
 
 } 
 
